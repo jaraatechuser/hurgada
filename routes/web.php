@@ -14,6 +14,8 @@ Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery.index');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+Route::get('/privacy-policy', [PageController::class, 'privacyPolicy'])->name('privacy.policy');
+Route::get('/terms-of-use', [PageController::class, 'termsOfUse'])->name('terms.use');
 
 Route::resource('attractions', AttractionController::class)->only(['index','show']);
 Route::resource('events', EventController::class)->only(['index','show']);

@@ -15,4 +15,14 @@ class PageController extends Controller
     {
         return view('pages.about');
     }
+
+    public function privacyPolicy()
+    {
+        return view('pages.privacy-policy');
+    }
+
+    public function termsOfUse()
+    {
+        return view('pages.terms-of-use');
+    }
 }
