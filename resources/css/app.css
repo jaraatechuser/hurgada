@@ -15,4 +15,24 @@
   .hero-bubble {
     @apply absolute rounded-full bg-rose-200/40 blur-xl animate-float;
   }
+  .shadow-soft {
+    box-shadow: 0 10px 25px -10px rgb(244 114 182 / 0.35), 0 6px 12px -6px rgb(0 0 0 / 0.08);
+  }
+}
+
+@layer utilities {
+  @keyframes float {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-8px) translateX(4px); }
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  @keyframes slideX {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-slide {
+    animation: slideX 30s linear infinite;
+  }
 }

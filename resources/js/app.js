@@ -2,10 +2,6 @@ import './bootstrap';
 
 import Alpine from 'alpinejs';
 
-window.Alpine = Alpine;
-
-Alpine.start();
-
 // Lightweight Leaflet loader and weather widget via Alpine
 window.hurghada = {
 	loadLeaflet: async () => {
@@ -23,3 +19,7 @@ window.hurghada = {
 		return res.json();
 	}
 };
+
+window.Alpine = Alpine;
+
+Alpine.start();
