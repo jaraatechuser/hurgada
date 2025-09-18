@@ -42,42 +42,135 @@
   </div>
 
   <!-- Instagram-style Photo Carousel -->
-  <section class="mt-10" x-data="{
-    i: 0,
-    auto: null,
-    imgs: [
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop',
-      'https://media-cdn.tripadvisor.com/media/photo-s/2e/3f/df/80/hotel-over-view.jpg?q=80&w=1600&auto=format&fit=crop',
-      'https://jakadatoursegypt.com/wp-content/uploads/2020/12/a-wonderful-view-of-one-of-the-beaches-of-hurghada.jpg?q=80&w=1600&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?q=80&w=1600&auto=format&fit=crop'
-    ],
-    go(idx){
-      this.i = idx;
-      this.$nextTick(() => {
-        const el = this.$refs.strip.children[idx];
-        if (!el) return;
-        this.$refs.container.scrollTo({ left: el.offsetLeft - 16, behavior: 'smooth' });
-      });
-    },
-    start(){
-      this.stop();
-      this.auto = setInterval(() => this.go((this.i + 1) % this.imgs.length), 3500);
-    },
-    stop(){ if (this.auto) clearInterval(this.auto) }
-  }" x-init="$nextTick(()=>{ go(0); start(); })" @mouseenter="stop()" @mouseleave="start()">
-    <div class="overflow-x-auto overflow-y-hidden rounded-3xl shadow snap-x snap-mandatory" x-ref="container">
-      <div class="flex gap-4 px-4 py-2" x-ref="strip">
-        <template x-for="(src,idx) in imgs" :key="idx">
-          <img :src="src" class="w-72 h-48 md:w-80 md:h-56 object-cover rounded-2xl snap-start select-none" :alt="'Hurghada '+(idx+1)">
-        </template>
+  <section class="mt-10">
+    <div class="swiper hurghada-carousel rounded-3xl shadow">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop" 
+               class="w-full h-48 md:h-56 object-cover rounded-2xl" 
+               alt="Hurghada Beach 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/2e/3f/df/80/hotel-over-view.jpg?q=80&w=1600&auto=format&fit=crop" 
+               class="w-full h-48 md:h-56 object-cover rounded-2xl" 
+               alt="Hurghada Hotel View">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://jakadatoursegypt.com/wp-content/uploads/2020/12/a-wonderful-view-of-one-of-the-beaches-of-hurghada.jpg?q=80&w=1600&auto=format&fit=crop" 
+               class="w-full h-48 md:h-56 object-cover rounded-2xl" 
+               alt="Hurghada Beach 2">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?q=80&w=1600&auto=format&fit=crop" 
+               class="w-full h-48 md:h-56 object-cover rounded-2xl" 
+               alt="Hurghada Beach 3">
+        </div>
       </div>
-    </div>
-    <div class="mt-3 flex justify-center gap-2">
-      <template x-for="(src,idx) in imgs" :key="'dot'+idx">
-        <button type="button" class="w-2.5 h-2.5 rounded-full" :class="i===idx ? 'bg-rose-500' : 'bg-rose-300'" @click="go(idx)"></button>
-      </template>
+      
+      <!-- Navigation buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      
+      <!-- Pagination dots -->
+      <div class="swiper-pagination"></div>
     </div>
   </section>
+
+  <style>
+  .hurghada-carousel {
+    padding: 16px;
+  }
+  
+  .hurghada-carousel .swiper-button-next,
+  .hurghada-carousel .swiper-button-prev {
+    color: #f43f5e; /* rose-500 */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    margin-top: -22px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hurghada-carousel .swiper-button-next:after,
+  .hurghada-carousel .swiper-button-prev:after {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .hurghada-carousel .swiper-pagination-bullet {
+    background: #fecdd3; /* rose-300 */
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .hurghada-carousel .swiper-pagination-bullet-active {
+    background: #f43f5e; /* rose-500 */
+  }
+  
+  .hurghada-carousel .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  </style>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const swiper = new Swiper('.hurghada-carousel', {
+      // Basic settings
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+      
+      // Responsive breakpoints
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 16,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+      },
+      
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      
+      // Pagination dots
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        bulletClass: 'swiper-pagination-bullet',
+        bulletActiveClass: 'swiper-pagination-bullet-active',
+      },
+      
+      // Effects
+      effect: 'slide',
+      speed: 600,
+      
+      // Accessibility
+      a11y: {
+        enabled: true,
+        prevSlideMessage: 'Previous slide',
+        nextSlideMessage: 'Next slide',
+        firstSlideMessage: 'This is the first slide',
+        lastSlideMessage: 'This is the last slide',
+      },
+    });
+  });
+  </script>
 
   <!-- Interactive Map -->
   <section class="mt-12">
