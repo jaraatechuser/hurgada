@@ -1,6 +1,11 @@
 import './bootstrap';
 
 import Alpine from 'alpinejs';
+import $ from 'jquery';
+import Masonry from 'masonry-layout';
+import imagesLoaded from 'imagesloaded';
+import 'lightbox2/dist/css/lightbox.css';
+import lightbox from 'lightbox2';
 
 // Lightweight Leaflet loader and weather widget via Alpine
 window.hurghada = {
@@ -23,3 +28,30 @@ window.hurghada = {
 window.Alpine = Alpine;
 
 Alpine.start();
+
+// Initialize Masonry + ImagesLoaded + Lightbox2 when a gallery exists on the page
+document.addEventListener('DOMContentLoaded', () => {
+    const gallery = document.querySelector('.gallery[data-masonry]');
+    if (!gallery) return;
+
+    const msnry = new Masonry(gallery, {
+        itemSelector: '.gallery-item',
+        columnWidth: '.gallery-sizer',
+        gutter: 16,
+        percentPosition: true,
+        transitionDuration: '0.3s'
+    });
+
+    imagesLoaded(gallery).on('progress', () => {
+        msnry.layout();
+    });
+
+    // Lightbox2 defaults
+    lightbox.option({
+        fadeDuration: 200,
+        resizeDuration: 200,
+        imageFadeDuration: 200,
+        wrapAround: true,
+        albumLabel: "%1 of %2"
+    });
+});

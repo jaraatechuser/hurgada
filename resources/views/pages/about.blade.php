@@ -49,7 +49,7 @@
   </div><br/><br/><br/>
 
   <!-- History -->
-  <div class="max-w-5xl mx_auto">
+  <div class="max-w-5xl mx-auto">
     <h2 class="text-2xl sm:text-3xl font-semibold text-rose-500 text-center mb-6 font-serif">A little history of Hurgada</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
       <div class="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-rose-100">
