@@ -210,10 +210,66 @@
 
   <!-- Testimonials / Quotes -->
   <section class="mt-12">
+    <div class="text-center mb-8">
+      <h2 class="text-2xl font-bold text-rose-700 mb-2">What travelers say</h2>
+      <p class="text-rose-600/80">Real experiences from our visitors</p>
+    </div>
     <div class="grid md:grid-cols-2 gap-6">
-      <div class="p-6 bg-pink-50 rounded-2xl shadow">"Hurghada is pure magic! 🌴✨"</div>
-      <div class="p-6 bg-purple-50 rounded-2xl shadow">"Sunsets that steal your heart! 🌅"</div>
-      <div class="p-6 bg-rose-50 rounded-2xl shadow md:col-span-2">"Crystal waters and coral dreams. I’m in love! 💖"</div>
+      <div class="group p-6 bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-pink-200/50">
+        <div class="flex items-start space-x-3">
+          <div class="flex-shrink-0 w-10 h-10 bg-pink-200 rounded-full flex items-center justify-center text-pink-600 text-lg">
+            🌴
+          </div>
+          <div class="flex-1">
+            <blockquote class="text-pink-800 font-medium leading-relaxed">"Hurghada is pure magic! The beaches are absolutely stunning and the water is crystal clear."</blockquote>
+            <div class="mt-3 flex items-center">
+              <div class="flex text-pink-400">
+                <span>⭐⭐⭐⭐⭐</span>
+              </div>
+              <span class="ml-2 text-sm text-pink-600 font-medium">Sarah M.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="group p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-purple-200/50">
+        <div class="flex items-start space-x-3">
+          <div class="flex-shrink-0 w-10 h-10 bg-purple-200 rounded-full flex items-center justify-center text-purple-600 text-lg">
+            🌅
+          </div>
+          <div class="flex-1">
+            <blockquote class="text-purple-800 font-medium leading-relaxed">"Sunsets that steal your heart! Every evening here is like a painting come to life."</blockquote>
+            <div class="mt-3 flex items-center">
+              <div class="flex text-purple-400">
+                <span>⭐⭐⭐⭐⭐</span>
+              </div>
+              <span class="ml-2 text-sm text-purple-600 font-medium">Alex K.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="group p-6 bg-gradient-to-br from-rose-50 to-rose-100 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-rose-200/50 md:col-span-2">
+        <div class="flex items-start space-x-4">
+          <div class="flex-shrink-0 w-12 h-12 bg-rose-200 rounded-full flex items-center justify-center text-rose-600 text-xl">
+            💖
+          </div>
+          <div class="flex-1">
+            <blockquote class="text-rose-800 font-medium leading-relaxed text-lg">"Crystal waters and coral dreams. I'm completely in love with this paradise! The diving here is absolutely incredible and the marine life is breathtaking."</blockquote>
+            <div class="mt-4 flex items-center justify-between">
+              <div class="flex items-center">
+                <div class="flex text-rose-400">
+                  <span>⭐⭐⭐⭐⭐</span>
+                </div>
+                <span class="ml-2 text-sm text-rose-600 font-medium">Emma L.</span>
+              </div>
+              <div class="text-xs text-rose-500 bg-rose-200 px-2 py-1 rounded-full">
+                Verified Visitor
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </div>
