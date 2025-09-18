@@ -13,6 +13,9 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+                'dancing': ['Dancing Script', 'cursive'],
+                'playfair': ['Playfair Display', 'serif'],
+                'crimson': ['Crimson Text', 'serif'],
             },
             colors: {
                 coral: {
