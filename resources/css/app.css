@@ -18,6 +18,12 @@
   .shadow-soft {
     box-shadow: 0 10px 25px -10px rgb(244 114 182 / 0.35), 0 6px 12px -6px rgb(0 0 0 / 0.08);
   }
+  .footer-gradient {
+    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 50%, #ffffff 100%);
+  }
+  .footer-gradient-dark {
+    background: linear-gradient(135deg, #1f2937 0%, #111827 50%, #0f172a 100%);
+  }
 }
 
 @layer utilities {
