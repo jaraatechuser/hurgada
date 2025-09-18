@@ -47,8 +47,8 @@
     auto: null,
     imgs: [
       'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=1600&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1600&auto=format&fit=crop',
+      'https://media-cdn.tripadvisor.com/media/photo-s/2e/3f/df/80/hotel-over-view.jpg?q=80&w=1600&auto=format&fit=crop',
+      'https://jakadatoursegypt.com/wp-content/uploads/2020/12/a-wonderful-view-of-one-of-the-beaches-of-hurghada.jpg?q=80&w=1600&auto=format&fit=crop',
       'https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?q=80&w=1600&auto=format&fit=crop'
     ],
     go(idx){

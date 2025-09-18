@@ -142,7 +142,7 @@
       <!-- Card 1 -->
       <div class="group rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-lg transition-all duration-300 ring-1 ring-rose-100">
         <div class="relative overflow-hidden aspect-[4/3]">
-          <img src="https://images.unsplash.com/photo-1501973801540-537f08ccae7b?q=80&w=1600&auto=format&fit=crop" alt="Sunset Beach" class="absolute inset-0 h-full w-full object-cover transform group-hover:scale-[1.05] transition duration-500" loading="lazy" decoding="async">
+          <img src="https://as2.ftcdn.net/jpg/01/99/09/29/1000_F_199092973_9jWqwwABbT8tukSO4kf77es5v6TXrZrq.jpg?q=80&w=1600&auto=format&fit=crop" alt="Sunset Beach" class="absolute inset-0 h-full w-full object-cover transform group-hover:scale-[1.05] transition duration-500" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-black/0 to-black/0"></div>
           <span class="absolute left-3 bottom-3 inline-flex items-center px-3 py-1 text-xs font-semibold rounded-full bg-white/90 text-rose-600 shadow">Sunset Beach</span>
         </div>
@@ -155,7 +155,7 @@
       <!-- Card 2 -->
       <div class="group rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-lg transition-all duration-300 ring-1 ring-rose-100 sm:translate-y-4">
         <div class="relative overflow-hidden aspect-[4/3]">
-          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop" alt="Giftun Island snorkeling" class="absolute inset-0 h-full w-full object-cover transform group-hover:scale-[1.05] transition duration-500" loading="lazy" decoding="async">
+          <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/10/3f/5d/0c.jpg?q=80&w=1600&auto=format&fit=crop" alt="Giftun Island snorkeling" class="absolute inset-0 h-full w-full object-cover transform group-hover:scale-[1.05] transition duration-500" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-black/0 to-black/0"></div>
           <span class="absolute left-3 bottom-3 inline-flex items-center px-3 py-1 text-xs font-semibold rounded-full bg-white/90 text-rose-600 shadow">Giftun Island</span>
         </div>
@@ -168,7 +168,7 @@
       <!-- Card 3 -->
       <div class="group rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-lg transition-all duration-300 ring-1 ring-rose-100">
         <div class="relative overflow-hidden aspect-[4/3]">
-          <img src="https://images.unsplash.com/photo-1548940740-204726a19be3?q=80&w=1600&auto=format&fit=crop" alt="Marina & Cafes" class="absolute inset-0 h-full w-full object-cover transform group-hover:scale-[1.05] transition duration-500" loading="lazy" decoding="async">
+          <img src="https://go-hurghada.net/wp-content/uploads/sites/27/2023/09/brochettes-viande-restaurant-marina-hurghada.jpg?q=80&w=1600&auto=format&fit=crop" alt="Marina & Cafes" class="absolute inset-0 h-full w-full object-cover transform group-hover:scale-[1.05] transition duration-500" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-black/0 to-black/0"></div>
           <span class="absolute left-3 bottom-3 inline-flex items-center px-3 py-1 text-xs font-semibold rounded-full bg-white/90 text-rose-600 shadow">Marina & Cafes</span>
         </div>
