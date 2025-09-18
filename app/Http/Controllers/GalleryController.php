@@ -31,48 +31,50 @@ class GalleryController extends Controller
             // Fallback: Pixabay CDN images (Hurghada / Red Sea / Egypt beaches). Hotlink-friendly.
             $images = [
                 [
-                    'src' => 'https://cdn.pixabay.com/photo/2016/11/29/12/54/beach-1867285_1280.jpg',
-                    'thumb' => 'https://cdn.pixabay.com/photo/2016/11/29/12/54/beach-1867285_640.jpg',
+                    'src' => 'https://www.egypttoursportal.com/images/2018/12/Hurghada-Red-Sea-Cairo-And-Hurghada-Holiday-Egypt-Tours-Portal.jpg',
+                    'thumb' => 'https://www.egypttoursportal.com/images/2018/12/Hurghada-Red-Sea-Cairo-And-Hurghada-Holiday-Egypt-Tours-Portal.jpg',
                     'width' => 1280,
                     'height' => 853,
-                    'alt' => 'Red Sea beach near Hurghada',
+                    'alt' => 'Golden sandy beach with parasols in Hurghada',
                 ],
                 [
-                    'src' => 'https://cdn.pixabay.com/photo/2018/01/15/07/51/egypt-3088015_1280.jpg',
-                    'thumb' => 'https://cdn.pixabay.com/photo/2018/01/15/07/51/egypt-3088015_640.jpg',
+                    'src' => 'https://www.egyptsunmarine.com/storage/hurghada-islands.jpg',
+                    'thumb' => 'https://www.egyptsunmarine.com/storage/hurghada-islands.jpg',
                     'width' => 1280,
                     'height' => 853,
-                    'alt' => 'Egypt Red Sea coast',
+                    'alt' => 'Crystal-clear turquoise waters of Hurghada beach',
                 ],
                 [
-                    'src' => 'https://cdn.pixabay.com/photo/2020/01/06/12/47/sea-4744360_1280.jpg',
-                    'thumb' => 'https://cdn.pixabay.com/photo/2020/01/06/12/47/sea-4744360_640.jpg',
+                    'src' => 'https://www.sharm-club.com/assets/images/cities/hurghada/hurghada-beaches.jpg',
+                    'thumb' => 'https://www.sharm-club.com/assets/images/cities/hurghada/hurghada-beaches.jpg',
                     'width' => 1280,
                     'height' => 853,
-                    'alt' => 'Turquoise water and sandy beach',
+                    'alt' => 'Pristine white sandy beach in Hurghada',
                 ],
                 [
-                    'src' => 'https://cdn.pixabay.com/photo/2016/07/28/10/32/boat-1549549_1280.jpg',
-                    'thumb' => 'https://cdn.pixabay.com/photo/2016/07/28/10/32/boat-1549549_640.jpg',
+                    'src' => 'https://jakadatoursegypt.com/wp-content/uploads/2020/12/a-wonderful-view-of-one-of-the-beaches-of-hurghada.jpg',
+                    'thumb' => 'https://jakadatoursegypt.com/wp-content/uploads/2020/12/a-wonderful-view-of-one-of-the-beaches-of-hurghada.jpg',
                     'width' => 1280,
                     'height' => 853,
-                    'alt' => 'Boat trip in the Red Sea',
+                    'alt' => 'Luxurious beach resort in Hurghada',
                 ],
                 [
-                    'src' => 'https://cdn.pixabay.com/photo/2016/11/29/03/53/sea-1864247_1280.jpg',
-                    'thumb' => 'https://cdn.pixabay.com/photo/2016/11/29/03/53/sea-1864247_640.jpg',
+                    'src' => 'https://www.egypttoursportal.com/images/2018/12/Siva-Grand-Beach-Beaches-in-Hurghada-Egypt-Tours-Portal.jpg',
+                    'thumb' => 'https://www.egypttoursportal.com/images/2018/12/Siva-Grand-Beach-Beaches-in-Hurghada-Egypt-Tours-Portal.jpg',
                     'width' => 1280,
                     'height' => 853,
-                    'alt' => 'Coral reef snorkeling waters',
+                    'alt' => 'Vibrant coral reef in Hurghada waters',
                 ],
                 [
-                    'src' => 'https://cdn.pixabay.com/photo/2016/06/24/10/47/egypt-1474662_1280.jpg',
-                    'thumb' => 'https://cdn.pixabay.com/photo/2016/06/24/10/47/egypt-1474662_640.jpg',
+                    'src' => 'https://www.sharm-club.com/assets/images/cities/hurghada/mahmya-beach-hurghada.jpg',
+                    'thumb' => 'https://www.sharm-club.com/assets/images/cities/hurghada/mahmya-beach-hurghada.jpg',
                     'width' => 1280,
                     'height' => 853,
-                    'alt' => 'Egypt seaside resort vibes',
+                    'alt' => 'Relaxing resort vibes in Hurghada',
                 ],
             ];
+
+
         }
 
         return view('pages.gallery', compact('images'));
