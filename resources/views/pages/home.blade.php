@@ -61,7 +61,7 @@
                alt="Hurghada Beach 2">
         </div>
         <div class="swiper-slide">
-          <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?q=80&w=1600&auto=format&fit=crop" 
+          <img src="https://assets.hrewards.com/assets/560_SHR_Hurghada_Al_Dau_Beach_exterior_day_0_D8_A5277new_ec8bddc20b.png?q=80&w=1600&auto=format&fit=crop"
                class="w-full h-48 md:h-56 object-cover rounded-2xl" 
                alt="Hurghada Beach 3">
         </div>
