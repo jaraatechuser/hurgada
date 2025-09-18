@@ -25,23 +25,66 @@
       </div>
     </div>
   </div>
-
+  <br/><br/>
   <!-- Overview -->
-  <div class="max-w-3xl mx-auto text-center space-y-5">
-    <p class="text-rose-900/80">
-      Nestled on the Red Sea coast of Egypt 🌍, Hurgada is the dreamy blend of
-      crystal-blue waters, soft sands, and carefree coastal vibes. Think sun-kissed mornings,
-      pastel sunsets, and starry nights by the marina.
-    </p>
-    <p class="text-rose-900/80">
-      The vibe? Relaxed, sunny, and a little sparkly — perfect for lazy beach days,
-      coral-reef adventures, and cute café stops between selfies 🌴☀️🏖️.
-    </p>
-    <p class="text-rose-900/80">
-      Famous for its silky beaches, vibrant reefs, and splashy water sports, Hurgada is your
-      go-to for snorkeling, island hopping, and breezy boat rides — all with a side of glam.
-    </p>
-  </div>
+  <div class="max-w-4xl mx-auto">
+    <div class="rounded-3xl bg-white/90 backdrop-blur shadow-md ring-1 ring-rose-100 px-6 py-8 sm:px-10 sm:py-12">
+      <h2 class="text-xl sm:text-2xl font-semibold tracking-tight text-rose-600 text-center font-serif italic">A seaside daydream</h2>
+      <div class="mt-5 text-rose-900/90 text-base sm:text-lg leading-relaxed space-y-5">
+        <p class="first-letter:text-3xl first-letter:sm:text-4xl first-letter:font-bold first-letter:text-rose-500 first-letter:mr-1 first-letter:float-left">
+          <span class="italic">Nestled on the Red Sea coast of Egypt</span> 🌍, Hurgada is the dreamy blend of
+          crystal-blue waters, soft sands, and carefree coastal vibes. Think <em class="italic">sun-kissed mornings</em>,
+          <em class="italic">pastel sunsets</em>, and starry nights by the marina.
+        </p>
+        <p class="italic">
+          The vibe? <span class="not-italic font-semibold text-rose-600">Relaxed, sunny, and a little sparkly</span> — perfect for lazy beach days,
+          coral-reef adventures, and cute café stops between selfies 🌴☀️🏖️.
+        </p>
+        <p>
+          Famous for its silky beaches, vibrant reefs, and splashy water sports, Hurgada is your
+          go-to for snorkeling, island hopping, and breezy boat rides — <span class="italic">all with a side of glam</span>.
+        </p>
+      </div>
+    </div>
+  </div><br/><br/><br/>
+
+  <!-- History -->
+  <div class="max-w-5xl mx_auto">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-rose-500 text-center mb-6 font-serif">A little history of Hurgada</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-rose-100">
+        <p class="text-xs uppercase tracking-wide text-rose-600">Early 1900s</p>
+        <p class="mt-1 text-rose-900/90">A modest fishing hamlet on the Red Sea, known to sailors and pearl divers.</p>
+      </div>
+      <div class="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-rose-100">
+        <p class="text-xs uppercase tracking-wide text-rose-600">1963 — First landmark hotel</p>
+        <p class="mt-1 text-rose-900/90"><span class="italic">Sheraton Hotel</span> opens, a pivotal moment for tourism. Designed by Egyptian architect <span class="font-medium">Mohamed M. Fawzy</span>, its cylindrical silhouette becomes an icon on the shoreline.</p>
+      </div>
+      <div class="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-rose-100">
+        <p class="text-xs uppercase tracking-wide text-rose-600">1970s–1980s</p>
+        <p class="mt-1 text-rose-900/90">Infrastructure grows — roads, marina, and the first modern resorts — drawing divers and sunseekers.</p>
+      </div>
+      <div class="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-rose-100">
+        <p class="text-xs uppercase tracking-wide text-rose-600">1990s–Today</p>
+        <p class="mt-1 text-rose-900/90">A vibrant resort city with budget gems to luxe five-star escapes, beloved for reefs and year-round sun.</p>
+      </div>
+    </div>
+    <div class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div class="rounded-2xl bg-rose-50 p-5 ring-1 ring-rose-100">
+        <p class="text-sm text-rose-700 font-semibold">Early development & the first hotel</p>
+        <p class="mt-1 text-rose-900/90 text-sm italic">Hurghada’s tourism story begins in earnest in 1963 with the Sheraton — a bold architectural statement that helped place the city on the global seaside map.</p>
+      </div>
+      <div class="rounded-2xl bg-rose-50 p-5 ring-1 ring-rose-100">
+        <p class="text-sm text-rose-700 font-semibold">Growth & expansion</p>
+        <p class="mt-1 text-rose-900/90 text-sm">The 1980s–1990s welcome a wave of resorts and investors, unlocking the coast’s potential for snorkeling, diving, and island-hopping.</p>
+      </div>
+      <div class="rounded-2xl bg-rose-50 p-5 ring-1 ring-rose-100">
+        <p class="text-sm text-rose-700 font-semibold">Modern era</p>
+        <p class="mt-1 text-rose-900/90 text-sm">Today, Hurghada offers everything from chic boutique stays to five-star luxury — with expanding marinas, promenades, and family-friendly attractions.</p>
+      </div>
+    </div>
+    <p class="mt-5 text-center text-sm text-rose-800/70 italic">From simple shores to sun-kissed resorts, the city blossomed with travelers who fell in love with its sea.</p>
+  </div><br/>
 
   <!-- Quick stats strip -->
   <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -61,7 +104,7 @@
       <p class="text-xs uppercase tracking-wide text-rose-600">Budget</p>
       <p class="text-xl font-bold text-rose-700">$ – $$</p>
     </div>
-  </div>
+  </div><br/>
 
   <!-- Why you'll love it -->
   <div class="max-w-5xl mx-auto">
@@ -90,7 +133,7 @@
       <span class="px-3 py-1 rounded-full text-xs font-semibold bg-rose-100 text-rose-700">#marina-moments</span>
       <span class="px-3 py-1 rounded-full text-xs font-semibold bg-cyan-100 text-cyan-700">#reef-life</span>
     </div>
-  </div>
+  </div><br/>
 
   <!-- Beaches & Activities -->
   <div class="space-y-6">
@@ -135,7 +178,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div><br/>
 
   <!-- Fun Facts / Vibes -->
   <div class="max-w-5xl mx-auto">
@@ -157,7 +200,7 @@
         <p class="font-semibold text-rose-900">Chill lounges & beach bars</p>
       </div>
     </div>
-  </div>
+  </div><br/>
 
   <!-- Plan your perfect day -->
   <div id="plan-day" class="max-w-5xl mx-auto">
@@ -176,7 +219,7 @@
         <p class="mt-1 text-rose-900/80 text-sm">Sunset cruise, dinner by the sea, and stargazing to close the day.</p>
       </div>
     </div>
-  </div>
+  </div><br/>
 
   <!-- Good to know / quick facts -->
   <div class="max-w-5xl mx-auto">
@@ -205,7 +248,7 @@
       <span class="px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-700">Sunhat & SPF</span>
       <span class="px-3 py-1 rounded-full text-xs font-semibold bg-fuchsia-100 text-fuchsia-700">Waterproof phone case</span>
     </div>
-  </div>
+  </div><br/>
 
   <!-- Closing / CTA -->
   <div class="text-center max-w-3xl mx-auto">
