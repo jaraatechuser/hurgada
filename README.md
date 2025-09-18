@@ -59,3 +59,69 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Technologies Used
+
+This project is a modern Laravel application leveraging a full-stack toolchain optimized for DX, performance, and maintainability.
+
+- **Runtime & Language**
+  - **PHP**: Modern PHP features (typed properties, enums, attributes) via PHP 8.x.
+  - **Composer**: Dependency management with PSR-4 autoloading.
+
+- **Framework & Core Libraries**
+  - **Laravel Framework**: HTTP routing, IoC container, middleware, validation, events, and job queues. Key components in use:
+    - **Eloquent ORM**: ActiveRecord-style models with factories/seeders (`database/factories`, `database/seeders`).
+    - **Migrations**: Schema management via timestamped migration classes in `database/migrations`.
+    - **Queues**: Config-driven queue abstraction; jobs table scaffolded for async workloads.
+    - **Caching & Session**: PSR-16 cache and session drivers configurable via `config/cache.php` and `config/session.php`.
+    - **Filesystem**: Flysystem v3 adapter with local disks for `public` and private storage (`config/filesystems.php`).
+
+- **Frontend Build & Styling**
+  - **Vite**: ESM-based bundling with hot module replacement; manifest-driven asset resolution in `public/build`.
+  - **Node Tooling**: `npm` scripts for dev/build; `resources/js` as the entrypoint.
+  - **Tailwind CSS**: Utility-first styling with `tailwind.config.js` and PostCSS pipeline (`postcss.config.js`).
+  - **PostCSS**: Autoprefixer and Tailwind processing for CSS output.
+
+- **Reactive UI**
+  - **Livewire**: Server-driven reactive components for dynamic UI without bespoke SPA code. Components under `app/Livewire` with corresponding Blade views in `resources/views/livewire`.
+  - **Blade**: Templating system with components in `resources/views/components` and page templates in `resources/views/pages`.
+
+- **Authentication & Scaffolding**
+  - **Laravel Breeze**: Minimal, modern auth scaffolding using Blade. Routes under `routes/auth.php`, views under `resources/views/auth` and `resources/views/layouts`.
+
+- **Database**
+  - **SQLite (development)**: File-backed database `database/database.sqlite` for zero-config local development.
+  - Easily switchable to MySQL/PostgreSQL via `config/database.php` and environment variables.
+
+- **Email & Notifications**
+  - **Mail**: Transport-agnostic mailer configured in `config/mail.php`.
+  - **Notifications**: Channel-based notifications (mail, database, etc.) available per Laravel core.
+
+- **Testing**
+  - **PHPUnit**: Feature and unit tests under `tests/Feature` and `tests/Unit`; configuration in `phpunit.xml`.
+  - **Model Factories**: Deterministic data generation for tests and seeders.
+
+- **Logging & Observability**
+  - **Monolog** via Laravel logging channels defined in `config/logging.php` with daily rotation and stack channels.
+
+- **Security**
+  - **CSRF Protection**: Middleware-enforced token validation on state-changing requests.
+  - **Validation**: Form request validation classes in `app/Http/Requests` and inline validation rules.
+  - **Encryption & Hashing**: OpenSSL-based encrypter and bcrypt/argon hashing via Laravel `Hash` facade.
+
+- **Dev Experience**
+  - **Artisan**: Task automation (migrations, seeding, queue workers, tinker).
+  - **Tinker**: REPL for runtime inspection and prototyping.
+  - **Pint**: Opinionated PHP code style fixer available via Composer bin.
+
+- **Deployment Considerations**
+  - **Config/Route Caching**: `artisan config:cache` and `artisan route:cache` compatible for reduced bootstrap overhead.
+  - **Optimized Autoloading**: Composer optimized classmaps for production builds.
+  - **Asset Versioning**: Vite manifest-based cache-busting in production.
+
+Reference documentation:
+
+- [Laravel Documentation](https://laravel.com/docs)
+- [Livewire Documentation](https://livewire.laravel.com/docs)
+- [Vite Guide](https://vitejs.dev/guide/)
+- [Tailwind CSS Docs](https://tailwindcss.com/docs)
