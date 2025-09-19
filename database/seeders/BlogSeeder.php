@@ -326,13 +326,161 @@ class BlogSeeder extends Seeder
 
         ];
 
+        $templates = [
+            <<<'TXT'
+—  —  —
+
+Beach day perfection 🏖️
+
+• Soft sands, calm lagoons, and sunrise strolls that reset the soul ☀️🧘
+
+• Pack a wide‑brim hat, refillable bottle, and reef‑safe sunscreen 🪸
+
+Golden hour ritual 🌅
+
+Find a quiet jetty, dangle your feet, and watch yachts drift by — simple, serene, unforgettable.
+TXT,
+            <<<'TXT'
+—  —  —
+
+Cultural threads 🧵
+
+• Mint tea with locals, stories that flow like music 🎶🫖
+
+• Markets full of color — saffron, dates, and handmade copper wares ✨
+
+Mindful travel 🤝
+
+Learn a few greetings, smile often, and the city smiles back 🙂
+TXT,
+            <<<'TXT'
+—  —  —
+
+Architectural moments 🕌
+
+• Courtyards whisper with fountains; shadows paint geometric poetry 🖋️💠
+
+• Look up: domes, muqarnas, and light that feels sacred 🌤️
+
+Sketch a corner, remember the calm.
+TXT,
+            <<<'TXT'
+—  —  —
+
+Music after dusk 🎼
+
+• Oud and qanun weave rhythms under string‑lights ✨
+
+• Tap your feet, clap along, let the darbuka find your heartbeat 🥁💃
+
+Carry the melody on your evening walk.
+TXT,
+            <<<'TXT'
+—  —  —
+
+Dance and joy 💃🕺
+
+• Swirling fabrics, storytelling hands, and laughter in the air 😄
+
+• Share the circle — two steps in, two steps out. Community matters.
+
+Your smile is the ticket.
+TXT,
+            <<<'TXT'
+—  —  —
+
+Adventure notes 🚤
+
+• Kitesurf breeze, snorkel coves, and dolphins at a distance 🐬
+
+• Respect currents, follow guides, and leave only bubbles ♻️
+
+Adrenaline with a gentle heart.
+TXT,
+            <<<'TXT'
+—  —  —
+
+Snorkeler’s checklist 🤿
+
+• Mask fit, anti‑fog, slow kicks to spare the coral 🪸
+
+• Float, breathe, and watch parrotfish nibble mosaic reefs 🎨
+
+Surface with a story to tell.
+TXT,
+            <<<'TXT'
+—  —  —
+
+Underwater diary 🌊
+
+• Butterflyfish duets, turtle glides, and sunbeams like stained glass 🐢✨
+
+• Buoyancy first, photos second — the reef thanks you.
+
+Every breath a postcard.
+TXT,
+            <<<'TXT'
+—  —  —
+
+Nights on the marina 🌙
+
+• Lantern glow, espresso clinks, and soft sea chatter ☕️🚤
+
+• Dress light, walk slow, follow the music.
+
+Make a wish at midnight.
+TXT,
+            <<<'TXT'
+—  —  —
+
+Desert starlight ✨
+
+• Sand ridges, tea by the fire, constellations close enough to touch 🔭🔥
+
+• Ride with accredited guides; greet with gratitude.
+
+Silence speaks loudly here.
+TXT,
+            <<<'TXT'
+—  —  —
+
+Plates to remember 🍽️
+
+• Grilled red snapper, tahini drizzle, warm baladi bread 🥖🐟
+
+• Ask for seasonal catch; thank the chef.
+
+Good food, good sea, good company.
+TXT,
+            <<<'TXT'
+—  —  —
+
+Diver’s log 📓
+
+• Check air, buddy, depth — then enjoy the blue cathedral 🫧
+
+• Wreck shadows, coral spires, and that first weightless turn.
+
+Dive safe, surface smiling.
+TXT,
+        ];
+
+        $i = 0;
+
         foreach ($articles as $article) {
+            $baseContent = trim($article['content']);
+
+            $extraContent = "\n\n" . $templates[$i % count($templates)];
+            $i++;
+
+            $content = $baseContent . $extraContent;
+
             DB::table('blogs')->insert([
                 'user_id' => 1,
                 'title' => $article['title'],
                 'slug' => Str::slug($article['title']),
-                'excerpt' => Str::limit($article['content'], 160),
-                'content' => $article['content'],
+                'excerpt' => Str::limit($content, 160),
+                'content' => $content,
                 'status' => 'published',
                 'views' => rand(50, 500),
                 'tags' => json_encode(explode(' ', strtolower($article['title']))),
