@@ -5,5 +5,6 @@
   <div class="prose max-w-none">
     {!! nl2br(e($blog->content)) !!}
   </div>
+  <br/>
 </div>
 </x-app-layout>
