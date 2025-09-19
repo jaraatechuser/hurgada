@@ -24,6 +24,39 @@
   .footer-gradient-dark {
     background: linear-gradient(135deg, #1f2937 0%, #111827 50%, #0f172a 100%);
   }
+  .drop-cap {
+    @apply float-left mr-2 leading-none italic;
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    line-height: 0.9;
+    font-family: 'Playfair Display', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    color: #b45309; /* amber-700 */
+  }
+
+  .feminine-italic {
+    font-family: 'Playfair Display', 'Crimson Text', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-style: italic;
+    @apply text-rose-900/90;
+  }
+
+  .soft-card {
+    @apply rounded-2xl bg-white p-5 shadow-sm ring-1 ring-rose-100;
+  }
+
+  .soft-card-rose {
+    @apply rounded-2xl bg-rose-50 text-rose-900/90 p-4 shadow-sm ring-1 ring-rose-100;
+  }
+
+  .image-tile {
+    @apply overflow-hidden rounded-xl shadow-sm ring-1 ring-rose-100 bg-white;
+  }
+
+  .image-fixed {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
 }
 
 @layer utilities {
@@ -40,5 +73,22 @@
   }
   .animate-slide {
     animation: slideX 30s linear infinite;
+  }
+  .gentle-italics {
+    font-family: 'Crimson Text', 'Playfair Display', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-style: italic;
+  }
+
+  .grid-align-top {
+    align-items: start;
+  }
+
+  .prose-soft h2 {
+    @apply text-rose-800 font-semibold;
+    font-family: 'Playfair Display', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+  .prose-soft p {
+    @apply text-rose-900/90;
+    font-family: 'Crimson Text', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 }

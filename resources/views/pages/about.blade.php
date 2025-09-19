@@ -1,264 +1,99 @@
 <x-app-layout>
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-20">
+    <x-slot name="header">
+        <h1 class="text-3xl font-semibold text-rose-800 gentle-italics">About Hurghada</h1>
+    </x-slot>
 
-  <!-- Hero -->
-  <div class="relative rounded-3xl overflow-hidden shadow-lg ring-1 ring-rose-100">
-    <div class="absolute inset-0 bg-gradient-to-tr from-rose-200/50 via-pink-100/40 to-cyan-100/50"></div>
-    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2000&auto=format&fit=crop" alt="Hurghada Beach" class="w-full h-[360px] sm:h-[520px] object-cover" loading="lazy" decoding="async">
-    <div class="absolute inset-0 bg-white/40 backdrop-blur-[2px]"></div>
-    <!-- Decorative blobs -->
-    <div class="pointer-events-none absolute -left-10 -top-10 h-40 w-40 rounded-full bg-rose-300/30 blur-3xl"></div>
-    <div class="pointer-events-none absolute -right-8 -bottom-12 h-52 w-52 rounded-full bg-cyan-300/30 blur-3xl"></div>
-    <div class="absolute inset-0 flex items-center justify-center text-center px-6">
-      <div>
-        <span class="inline-block mb-3 text-xs sm:text-sm px-3 py-1 rounded-full bg-rose-100/90 text-rose-700 font-semibold shadow-sm">Red Sea • Egypt</span>
-        <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-rose-500 drop-shadow-sm leading-tight">
-          Discover Hurgada 💖
-        </h1>
-        <p class="mt-3 sm:mt-4 text-base sm:text-lg text-rose-800/80 max-w-2xl mx-auto">
-          Turquoise waters, golden beaches, dreamy sunsets — every hour is golden hour ✨
-        </p>
-        <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
-          <a href="{{ route('gallery.index') }}" class="inline-flex items-center px-5 py-2.5 rounded-full bg-rose-500 text-white font-semibold shadow-md hover:bg-rose-600 hover:shadow-lg transition">Explore Beaches 🏖️</a>
-          <a href="#plan-day" class="inline-flex items-center px-5 py-2.5 rounded-full bg-white/80 text-rose-600 font-semibold shadow hover:shadow-md transition ring-1 ring-rose-200">Plan your day ✨</a>
+    <section class="py-10 pastel-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <div class="lg:col-span-2 space-y-6">
+                    <div class="soft-card">
+                        <p class="feminine-italic text-lg">
+                            <span class="drop-cap">A</span>
+                            modest fishing hamlet on the Red Sea, known to sailors and pearl divers. Over the 20th century, Hurghada grew from a quiet coastline into one of Egypt’s most beloved seaside destinations, celebrated for its clear waters, thriving reefs, and welcoming spirit.
+                        </p>
+                        <p class="feminine-italic text-lg">
+                            <span class="drop-cap">F</span>
+                            rom its humble beginnings as a modest fishing hamlet on the Red Sea, known to sailors and pearl divers, Hurghada has blossomed into one of Egypt’s most beloved seaside destinations. Over the 20th century, this sun-kissed town transformed from quiet coastline to a vibrant hub of life, celebrated for its crystal-clear waters, thriving coral reefs, and warm, welcoming spirit.
+                        </p>
+                        <p class="feminine-italic text-lg">
+                            <span class="drop-cap">T</span>
+                            oday, Hurghada is a paradise for beach lovers and adventure seekers alike. Its golden sands stretch for miles, perfect for soaking up the sun or strolling along the shore. Beneath the waves, a world of color awaits: snorkeling and diving enthusiasts explore vibrant coral gardens teeming with exotic fish. On land, the bustling marina and promenade offer a modern playground of cafés, boutique shops, and lively entertainment, blending relaxation with the thrill of discovery.
+                        </p>
+                        <p class="feminine-italic text-lg">
+                            <span class="drop-cap">B</span>
+                            eyond the coastline, the surrounding desert paints a serene, timeless landscape. Visitors can ride camels across sweeping dunes, visit traditional Bedouin villages, or simply watch the sunset set the sands aglow. Whether you’re chasing underwater adventures, savoring local flavors, or losing yourself in the beauty of the Red Sea and desert horizon, Hurghada invites you to experience a place where nature, history, and modern charm meet in perfect harmony. 🌊☀️🐠✨
+                        </p>
+                    </div>
+
+                    <div class="soft-card-rose">
+                        <h2 class="text-xl mb-2">Tourism takes shape</h2>
+                        <p class="feminine-italic">
+                            <span class="drop-cap">S</span>heraton Hotel opens, a pivotal moment for tourism. Designed by Egyptian architect Mohamed M. Fawzy, its cylindrical silhouette becomes an icon on the shoreline, signaling Hurghada’s emergence onto the world travel map.
+                        </p>
+                        <p class="feminine-italic">
+                            <span class="drop-cap">F</span>
+                            ollowing the opening of the Heraton Hotel, Hurghada’s transformation accelerates. Luxury resorts, boutique hotels, and guesthouses begin to dot the coastline, catering to a growing influx of international travelers. The town evolves from a quiet fishing village into a bustling resort destination, where modern amenities meet the natural beauty of the Red Sea 🌊.
+                        </p>
+                        <p class="feminine-italic">
+                            <span class="drop-cap">T</span>
+                            ourism brings new energy to the community, inspiring local markets, lively cafés ☕, and vibrant nightlife 🎶. Meanwhile, the underwater world continues to captivate visitors, with coral reefs, colorful fish 🐠, and shipwrecks drawing divers from across the globe. Land-based adventures flourish as well, with desert excursions, Bedouin cultural experiences 🐪, and sunset camel rides offering a glimpse into the timeless landscapes beyond the beach 🌅.
+                        </p>
+                        <p class="feminine-italic">
+                            <span class="drop-cap">T</span>
+                            hrough these changes, Hurghada preserves its welcoming spirit ❤️, blending history, nature, and modern comfort. From its iconic skyline marked by the Heraton Hotel 🏨 to the sparkling reefs beneath the waves, the city stands as a shining example of Egypt’s Red Sea charm—inviting travelers to explore, relax, and create unforgettable memories ✨.
+                        </p>
+                        <p class="feminine-italic">
+                            <span class="drop-cap">T</span>
+                            oday, Hurghada continues to grow as a vibrant destination that balances adventure with tranquility. Whether you’re diving into the deep blue, strolling along palm-lined promenades 🌴, or savoring local flavors 🥘, every corner of this city tells a story of beauty, resilience, and joy.
+                        </p>
+                    </div>
+
+                    <div class="soft-card">
+                        <h2 class="text-xl mb-2">Sea, reefs, and gentle adventures</h2>
+                        <p class="feminine-italic">
+                            Today, visitors come for sun-dappled bays, snorkeling among coral gardens, and tranquil evenings along the corniche. Families, divers, and sailors find an easy rhythm here—unhurried, radiant, and serene.
+                        </p>
+                        <p class="feminine-italic">
+                            From sunrise to sunset, Hurghada invites you to slow down and savor every moment 🌅🌊. Kayaks glide across turquoise waters, snorkelers float among colorful reefs 🐠✨, and palm-lined promenades offer the perfect spot for evening strolls 🌴☕. Families laugh on sun-kissed beaches, divers explore hidden underwater worlds 🤿, and sailors drift gently along the horizon ⛵.
+                        </p>
+                    </div>
+                </div>
+
+                <aside class="space-y-6">
+                    <div class="soft-card-rose">
+                        <h3 class="text-lg mb-1">At a glance</h3>
+                        <ul class="list-disc ms-5 feminine-italic space-y-1">
+                            <li>Red Sea gateway with year-round sunshine</li>
+                            <li>Renowned coral reefs and calm lagoons</li>
+                            <li>Warm, hospitable local culture</li>
+                        </ul>
+                    </div>
+                    <div class="soft-card">
+                        <h3 class="text-lg mb-1">Character</h3>
+                        <p class="feminine-italic">Gentle, feminine, and quietly luminous—Hurghada blends maritime heritage with contemporary ease.</p>
+                    </div>
+                </aside>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-semibold text-rose-800 gentle-italics mb-4">Moments by the sea</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 grid-align-top">
+                    <figure class="image-tile">
+                        <img class="image-fixed"
+                             src="https://www.egyptsunmarine.com/storage/hurghada-islands.jpg?q=80&w=1200&auto=format&fit=crop" alt="Red Sea shoreline at golden hour">
+                    </figure>
+                    <figure class="image-tile">
+                        <img class="image-fixed"
+                             src="https://media-cdn.tripadvisor.com/media/photo-s/0f/d7/06/57/hurghada-marriott-beach.jpg?q=80&w=1200&auto=format&fit=crop" alt="Snorkeling over coral reefs">
+                    </figure>
+                    <figure class="image-tile">
+                        <img class="image-fixed"
+                             src="https://www.sharm-club.com/assets/images/cities/hurghada/mahmya-beach-hurghada.jpg?q=80&w=1200&auto=format&fit=crop" alt="Marina at dusk with soft lights">
+                    </figure>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <br/><br/>
-  <!-- Overview -->
-  <div class="max-w-4xl mx-auto">
-    <div class="rounded-3xl bg-white/90 backdrop-blur shadow-md ring-1 ring-rose-100 px-6 py-8 sm:px-10 sm:py-12">
-      <h2 class="text-xl sm:text-2xl font-semibold tracking-tight text-rose-600 text-center font-serif italic">A seaside daydream</h2>
-      <div class="mt-5 text-rose-900/90 text-base sm:text-lg leading-relaxed space-y-5">
-        <p class="first-letter:text-3xl first-letter:sm:text-4xl first-letter:font-bold first-letter:text-rose-500 first-letter:mr-1 first-letter:float-left">
-          <span class="italic">Nestled on the Red Sea coast of Egypt</span> 🌍, Hurgada is the dreamy blend of
-          crystal-blue waters, soft sands, and carefree coastal vibes. Think <em class="italic">sun-kissed mornings</em>,
-          <em class="italic">pastel sunsets</em>, and starry nights by the marina.
-        </p>
-        <p class="italic">
-          The vibe? <span class="not-italic font-semibold text-rose-600">Relaxed, sunny, and a little sparkly</span> — perfect for lazy beach days,
-          coral-reef adventures, and cute café stops between selfies 🌴☀️🏖️.
-        </p>
-        <p>
-          Famous for its silky beaches, vibrant reefs, and splashy water sports, Hurgada is your
-          go-to for snorkeling, island hopping, and breezy boat rides — <span class="italic">all with a side of glam</span>.
-        </p>
-      </div>
-    </div>
-  </div><br/><br/><br/>
-
-  <!-- History -->
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-2xl sm:text-3xl font-semibold text-rose-500 text-center mb-6 font-serif">A little history of Hurgada</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <div class="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-rose-100">
-        <p class="text-xs uppercase tracking-wide text-rose-600">Early 1900s</p>
-        <p class="mt-1 text-rose-900/90">A modest fishing hamlet on the Red Sea, known to sailors and pearl divers.</p>
-      </div>
-      <div class="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-rose-100">
-        <p class="text-xs uppercase tracking-wide text-rose-600">1963 — First landmark hotel</p>
-        <p class="mt-1 text-rose-900/90"><span class="italic">Sheraton Hotel</span> opens, a pivotal moment for tourism. Designed by Egyptian architect <span class="font-medium">Mohamed M. Fawzy</span>, its cylindrical silhouette becomes an icon on the shoreline.</p>
-      </div>
-      <div class="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-rose-100">
-        <p class="text-xs uppercase tracking-wide text-rose-600">1970s–1980s</p>
-        <p class="mt-1 text-rose-900/90">Infrastructure grows — roads, marina, and the first modern resorts — drawing divers and sunseekers.</p>
-      </div>
-      <div class="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-rose-100">
-        <p class="text-xs uppercase tracking-wide text-rose-600">1990s–Today</p>
-        <p class="mt-1 text-rose-900/90">A vibrant resort city with budget gems to luxe five-star escapes, beloved for reefs and year-round sun.</p>
-      </div>
-    </div>
-    <div class="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-4">
-      <div class="rounded-2xl bg-rose-50 p-5 ring-1 ring-rose-100">
-        <p class="text-sm text-rose-700 font-semibold">Early development & the first hotel</p>
-        <p class="mt-1 text-rose-900/90 text-sm italic">Hurghada’s tourism story begins in earnest in 1963 with the Sheraton — a bold architectural statement that helped place the city on the global seaside map.</p>
-      </div>
-      <div class="rounded-2xl bg-rose-50 p-5 ring-1 ring-rose-100">
-        <p class="text-sm text-rose-700 font-semibold">Growth & expansion</p>
-        <p class="mt-1 text-rose-900/90 text-sm">The 1980s–1990s welcome a wave of resorts and investors, unlocking the coast’s potential for snorkeling, diving, and island-hopping.</p>
-      </div>
-      <div class="rounded-2xl bg-rose-50 p-5 ring-1 ring-rose-100">
-        <p class="text-sm text-rose-700 font-semibold">Modern era</p>
-        <p class="mt-1 text-rose-900/90 text-sm">Today, Hurghada offers everything from chic boutique stays to five-star luxury — with expanding marinas, promenades, and family-friendly attractions.</p>
-      </div>
-    </div>
-    <p class="mt-5 text-center text-sm text-rose-800/70 italic">From simple shores to sun-kissed resorts, the city blossomed with travelers who fell in love with its sea.</p>
-  </div><br/>
-
-  <!-- Quick stats strip -->
-  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-    <div class="rounded-2xl bg-white shadow-sm ring-1 ring-rose-100 p-4 text-center">
-      <p class="text-xs uppercase tracking-wide text-rose-600">Sunshine</p>
-      <p class="text-xl font-bold text-rose-700">300+ days</p>
-    </div>
-    <div class="rounded-2xl bg-white shadow-sm ring-1 ring-rose-100 p-4 text-center">
-      <p class="text-xs uppercase tracking-wide text-rose-600">Water</p>
-      <p class="text-xl font-bold text-rose-700">Crystal clear</p>
-    </div>
-    <div class="rounded-2xl bg-white shadow-sm ring-1 ring-rose-100 p-4 text-center">
-      <p class="text-xs uppercase tracking-wide text-rose-600">Vibe</p>
-      <p class="text-xl font-bold text-rose-700">Chill & chic</p>
-    </div>
-    <div class="rounded-2xl bg-white shadow-sm ring-1 ring-rose-100 p-4 text-center">
-      <p class="text-xs uppercase tracking-wide text-rose-600">Budget</p>
-      <p class="text-xl font-bold text-rose-700">$ – $$</p>
-    </div>
-  </div><br/>
-
-  <!-- Why you'll love it -->
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-2xl sm:text-3xl font-semibold text-rose-500 text-center mb-6">Why you’ll love Hurgada</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      <div class="rounded-2xl bg-rose-50 text-rose-900/90 p-4 shadow-sm ring-1 ring-rose-100">
-        <p class="font-semibold">Beach girl energy 💅</p>
-        <p class="text-sm mt-1">Soft sands, calm waves, and totally Instagrammable palettes.</p>
-      </div>
-      <div class="rounded-2xl bg-rose-50 text-rose-900/90 p-4 shadow-sm ring-1 ring-rose-100">
-        <p class="font-semibold">Reef romance 🐠</p>
-        <p class="text-sm mt-1">Snorkel above neon corals and spot playful fish friends.</p>
-      </div>
-      <div class="rounded-2xl bg-rose-50 text-rose-900/90 p-4 shadow-sm ring-1 ring-rose-100">
-        <p class="font-semibold">Golden hours 🌅</p>
-        <p class="text-sm mt-1">Sunset boat rides and marina strolls that glow.</p>
-      </div>
-      <div class="rounded-2xl bg-rose-50 text-rose-900/90 p-4 shadow-sm ring-1 ring-rose-100">
-        <p class="font-semibold">Easy-breezy vibes 🍹</p>
-        <p class="text-sm mt-1">Chill lounges, beach bars, and cute cafés to unwind.</p>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center gap-2 mt-5">
-      <span class="px-3 py-1 rounded-full text-xs font-semibold bg-fuchsia-100 text-fuchsia-700">#turquoise-dreams</span>
-      <span class="px-3 py-1 rounded-full text-xs font-semibold bg-pink-100 text-pink-700">#sunkissed</span>
-      <span class="px-3 py-1 rounded-full text-xs font-semibold bg-rose-100 text-rose-700">#marina-moments</span>
-      <span class="px-3 py-1 rounded-full text-xs font-semibold bg-cyan-100 text-cyan-700">#reef-life</span>
-    </div>
-  </div><br/>
-
-  <!-- Beaches & Activities -->
-  <div class="space-y-6">
-    <h2 class="text-2xl sm:text-3xl font-semibold text-rose-500 text-center">Beaches & Activities</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Card 1 -->
-      <div class="group rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-lg transition-all duration-300 ring-1 ring-rose-100">
-        <div class="relative overflow-hidden aspect-[4/3]">
-          <img src="https://as2.ftcdn.net/jpg/01/99/09/29/1000_F_199092973_9jWqwwABbT8tukSO4kf77es5v6TXrZrq.jpg?q=80&w=1600&auto=format&fit=crop" alt="Sunset Beach" class="absolute inset-0 h-full w-full object-cover transform group-hover:scale-[1.05] transition duration-500" loading="lazy" decoding="async">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-black/0 to-black/0"></div>
-          <span class="absolute left-3 bottom-3 inline-flex items-center px-3 py-1 text-xs font-semibold rounded-full bg-white/90 text-rose-600 shadow">Sunset Beach</span>
-        </div>
-        <div class="p-4">
-          <p class="text-rose-700 font-medium">Sunset Beach</p>
-          <p class="text-rose-900/70 text-sm">Golden skies, soft waves, and that perfect glow-up light 🌅</p>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="group rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-lg transition-all duration-300 ring-1 ring-rose-100 sm:translate-y-4">
-        <div class="relative overflow-hidden aspect-[4/3]">
-          <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/10/3f/5d/0c.jpg?q=80&w=1600&auto=format&fit=crop" alt="Giftun Island snorkeling" class="absolute inset-0 h-full w-full object-cover transform group-hover:scale-[1.05] transition duration-500" loading="lazy" decoding="async">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-black/0 to-black/0"></div>
-          <span class="absolute left-3 bottom-3 inline-flex items-center px-3 py-1 text-xs font-semibold rounded-full bg-white/90 text-rose-600 shadow">Giftun Island</span>
-        </div>
-        <div class="p-4">
-          <p class="text-rose-700 font-medium">Giftun Island</p>
-          <p class="text-rose-900/70 text-sm">Snorkel in crystal-clear waters and live your mermaid moment 🐠</p>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="group rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-lg transition-all duration-300 ring-1 ring-rose-100">
-        <div class="relative overflow-hidden aspect-[4/3]">
-          <img src="https://go-hurghada.net/wp-content/uploads/sites/27/2023/09/brochettes-viande-restaurant-marina-hurghada.jpg?q=80&w=1600&auto=format&fit=crop" alt="Marina & Cafes" class="absolute inset-0 h-full w-full object-cover transform group-hover:scale-[1.05] transition duration-500" loading="lazy" decoding="async">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-black/0 to-black/0"></div>
-          <span class="absolute left-3 bottom-3 inline-flex items-center px-3 py-1 text-xs font-semibold rounded-full bg-white/90 text-rose-600 shadow">Marina & Cafes</span>
-        </div>
-        <div class="p-4">
-          <p class="text-rose-700 font-medium">Marina & Cafes</p>
-          <p class="text-rose-900/70 text-sm">Cute spots for selfies, mocktails, and pastel sunsets ☕</p>
-        </div>
-      </div>
-    </div>
-  </div><br/>
-
-  <!-- Fun Facts / Vibes -->
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-2xl sm:text-3xl font-semibold text-rose-500 text-center mb-6">Hurgada Vibes • Fun Facts</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      <div class="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-rose-100">
-        <p class="text-2xl">🌸</p>
-        <p class="mt-2 text-sm text-rose-700/90">Best time to visit</p>
-        <p class="font-semibold text-rose-900">October – April</p>
-      </div>
-      <div class="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-rose-100">
-        <p class="text-2xl">🏄‍♀️</p>
-        <p class="mt-2 text-sm text-rose-700/90">Popular water sports</p>
-        <p class="font-semibold text-rose-900">Snorkeling • Diving • Kite surfing</p>
-      </div>
-      <div class="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-rose-100">
-        <p class="text-2xl">🍹</p>
-        <p class="mt-2 text-sm text-rose-700/90">Nightlife</p>
-        <p class="font-semibold text-rose-900">Chill lounges & beach bars</p>
-      </div>
-    </div>
-  </div><br/>
-
-  <!-- Plan your perfect day -->
-  <div id="plan-day" class="max-w-5xl mx-auto">
-    <h2 class="text-2xl sm:text-3xl font-semibold text-rose-500 text-center mb-6">Plan your perfect day</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-      <div class="rounded-2xl bg-white p-5 shadow-md ring-1 ring-rose-100">
-        <p class="text-xs font-semibold text-rose-600">Morning ☀️</p>
-        <p class="mt-1 text-rose-900/80 text-sm">Beachfront breakfast + early snorkel at Giftun while the water is glassy.</p>
-      </div>
-      <div class="rounded-2xl bg-white p-5 shadow-md ring-1 ring-rose-100">
-        <p class="text-xs font-semibold text-rose-600">Afternoon 🌊</p>
-        <p class="mt-1 text-rose-900/80 text-sm">Lazy sunbathing, fresh juices, and a pastel maxi-dress moment by the marina.</p>
-      </div>
-      <div class="rounded-2xl bg-white p-5 shadow-md ring-1 ring-rose-100">
-        <p class="text-xs font-semibold text-rose-600">Evening 🌅</p>
-        <p class="mt-1 text-rose-900/80 text-sm">Sunset cruise, dinner by the sea, and stargazing to close the day.</p>
-      </div>
-    </div>
-  </div><br/>
-
-  <!-- Good to know / quick facts -->
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-2xl sm:text-3xl font-semibold text-rose-500 text-center mb-6">Good to know</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      <div class="rounded-2xl bg-rose-50 p-4 shadow-sm ring-1 ring-rose-100">
-        <p class="text-sm text-rose-700">Best months</p>
-        <p class="text-lg font-semibold text-rose-900">Oct – Apr</p>
-      </div>
-      <div class="rounded-2xl bg-rose-50 p-4 shadow-sm ring-1 ring-rose-100">
-        <p class="text-sm text-rose-700">Water temp</p>
-        <p class="text-lg font-semibold text-rose-900">22–28°C</p>
-      </div>
-      <div class="rounded-2xl bg-rose-50 p-4 shadow-sm ring-1 ring-rose-100">
-        <p class="text-sm text-rose-700">Budget</p>
-        <p class="text-lg font-semibold text-rose-900">$ – $$</p>
-      </div>
-      <div class="rounded-2xl bg-rose-50 p-4 shadow-sm ring-1 ring-rose-100">
-        <p class="text-sm text-rose-700">Safety</p>
-        <p class="text-lg font-semibold text-rose-900">Tourist-friendly</p>
-      </div>
-    </div>
-    <div class="mt-5 flex flex-wrap justify-center gap-2">
-      <span class="px-3 py-1 rounded-full text-xs font-semibold bg-rose-100 text-rose-700">Flowy dresses</span>
-      <span class="px-3 py-1 rounded-full text-xs font-semibold bg-cyan-100 text-cyan-700">Pastel swimsuits</span>
-      <span class="px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-700">Sunhat & SPF</span>
-      <span class="px-3 py-1 rounded-full text-xs font-semibold bg-fuchsia-100 text-fuchsia-700">Waterproof phone case</span>
-    </div>
-  </div><br/>
-
-  <!-- Closing / CTA -->
-  <div class="text-center max-w-3xl mx-auto">
-    <p class="text-rose-900/90 text-lg">
-      Whether you’re chasing sunsets or adventures, Hurgada will steal your heart 💕
-    </p>
-    <a href="{{ route('gallery.index') }}" class="inline-flex items-center mt-6 px-6 py-3 rounded-full bg-rose-500 text-white font-semibold shadow-md hover:bg-rose-600 hover:shadow-lg transition">
-      Explore Hurgada’s Beaches 🏖️
-    </a>
-  </div>
-
-</section>
+    </section>
 </x-app-layout>
+
