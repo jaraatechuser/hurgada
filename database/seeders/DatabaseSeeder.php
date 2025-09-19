@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
 
 		Attraction::factory()->count(24)->create();
 		Event::factory()->count(12)->create();
-		Blog::factory()->count(10)->create(['user_id' => $user->id]);
+
+		$this->call(BlogSeeder::class);
 	}
 }
