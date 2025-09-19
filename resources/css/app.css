@@ -32,6 +32,12 @@
     color: #b45309; /* amber-700 */
   }
 
+  .drop-cap-center {
+    float: none;
+    margin-right: 0;
+    display: inline;
+  }
+
   .feminine-italic {
     font-family: 'Playfair Display', 'Crimson Text', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     font-style: italic;

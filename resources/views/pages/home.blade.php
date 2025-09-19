@@ -10,7 +10,7 @@
       <h1 class="mt-6 text-4xl md:text-6xl font-extrabold tracking-tight text-rose-600 drop-shadow-sm">
         Hurghada: sun-kissed & sparkling
       </h1>
-      <p class="mt-4 md:mt-6 text-base md:text-lg text-rose-800/80 max-w-2xl mx-auto">
+      <p class="mt-4 md:mt-6 text-base md:text-lg text-rose-800/80 max-w-2xl mx-auto gentle-italics">
         Beaches, coral reefs, and pastel sunsets. Plan your dreamy getaway today ✨
       </p>
       <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -22,6 +22,20 @@
       <div class="hero-bubble w-40 h-40 -left-10 top-10"></div>
       <div class="hero-bubble w-56 h-56 right-10 -bottom-10"></div>
       <div class="hero-bubble w-24 h-24 left-1/2 top-6"></div>
+    </div>
+  </section>
+
+  <!-- Gentle Intro with Drop Caps -->
+  <section class="mt-10">
+    <div class="soft-card">
+      <p class="feminine-italic text-lg text-center">
+        <span class="drop-cap drop-cap-center">W</span>
+        here the Red Sea kisses golden sands, Hurghada whispers a promise of sun, serenity, and endless adventure. ☀️🐠
+      </p>
+      <p class="feminine-italic text-lg mt-4 text-center">
+        <span class="drop-cap drop-cap-center">I</span>
+        n Hurghada, the sea sparkles, the sands invite, and every moment feels like a postcard from paradise. 🐪🌊
+      </p>
     </div>
   </section>
 
