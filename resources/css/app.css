@@ -63,6 +63,53 @@
     object-position: center;
     display: block;
   }
+
+  /* Auth form enhancements */
+  .auth-form-container {
+    @apply bg-white/90 backdrop-blur-sm shadow-soft rounded-3xl p-6 sm:p-8 border border-rose-100/50;
+  }
+
+  .auth-input {
+    @apply block w-full px-4 py-3 bg-white/80 backdrop-blur-sm border border-rose-200 rounded-2xl text-rose-900 placeholder-rose-400 focus:border-rose-400 focus:ring-2 focus:ring-rose-200 focus:outline-none transition-all duration-300 shadow-sm hover:shadow-md focus:shadow-lg;
+  }
+
+  .auth-button {
+    @apply inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-rose-400 to-pink-500 hover:from-rose-500 hover:to-pink-600 border border-transparent rounded-2xl font-medium text-sm text-white shadow-soft hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-rose-300 focus:ring-offset-2 transition-all duration-300 transform hover:scale-105 active:scale-95;
+  }
+
+  .auth-label {
+    @apply block font-medium text-sm text-rose-800 mb-2 font-serif italic;
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 640px) {
+    .auth-form-container {
+      @apply p-4 mx-2;
+    }
+    
+    .hero-bubble {
+      @apply w-16 h-16;
+    }
+    
+    .auth-input {
+      @apply py-2.5 px-3 text-base;
+    }
+    
+    .auth-button {
+      @apply py-2.5 px-6 text-base;
+    }
+    
+    .auth-label {
+      @apply text-base;
+    }
+  }
+
+  /* Tablet responsiveness */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .auth-form-container {
+      @apply p-6;
+    }
+  }
 }
 
 @layer utilities {
