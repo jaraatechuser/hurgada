@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 class Event extends Model
 {
@@ -21,6 +22,11 @@ class Event extends Model
 		'latitude' => 'decimal:7',
 		'longitude' => 'decimal:7',
 	];
+
+	public function comments(): MorphMany
+	{
+		return $this->morphMany(Comment::class, 'commentable')->latest();
+	}
 
 	protected static function booted(): void
 	{

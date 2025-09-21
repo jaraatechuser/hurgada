@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 class Attraction extends Model
 {
@@ -22,6 +23,11 @@ class Attraction extends Model
 		'longitude' => 'decimal:7',
 		'rating' => 'decimal:2',
 	];
+
+	public function comments(): MorphMany
+	{
+		return $this->morphMany(Comment::class, 'commentable')->latest();
+	}
 
 	protected static function booted(): void
 	{
