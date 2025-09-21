@@ -1,74 +1,65 @@
-<svg viewBox="0 0 316 316" xmlns="http://www.w3.org/2000/svg" {{ $attributes }}>
-    <!-- Sea background gradient -->
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" {{ $attributes }}>
+    <!-- Pink heart gradients -->
     <defs>
-        <linearGradient id="seaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#4682B4;stop-opacity:1" />
+        <linearGradient id="heartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FF69B4;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#FF1493;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#DC143C;stop-opacity:1" />
         </linearGradient>
-        <linearGradient id="coralGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
-            <stop offset="50%" style="stop-color:#FF8E8E;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#FFB3B3;stop-opacity:1" />
+        <linearGradient id="heartGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FFB6C1;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#FF69B4;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#FF1493;stop-opacity:1" />
         </linearGradient>
-        <linearGradient id="coralGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color:#FFA500;stop-opacity:1" />
-            <stop offset="50%" style="stop-color:#FFB84D;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#FFCC80;stop-opacity:1" />
-        </linearGradient>
+        <radialGradient id="heartShine" cx="30%" cy="30%">
+            <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.8" />
+            <stop offset="70%" style="stop-color:#FFFFFF;stop-opacity:0.3" />
+            <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+        </radialGradient>
     </defs>
     
-    <!-- Sea background -->
-    <rect width="316" height="316" fill="url(#seaGradient)"/>
+    <!-- Background circle with soft pink -->
+    <circle cx="50" cy="50" r="48" fill="#FDF2F8" stroke="#FCE7F3" stroke-width="2"/>
     
-    <!-- Sea floor -->
-    <path d="M0 280 Q80 260 160 270 T316 280 L316 316 L0 316 Z" fill="#8B4513" opacity="0.7"/>
+    <!-- Main heart shape -->
+    <path d="M50 85 C50 85 20 60 20 40 C20 25 30 15 45 15 C50 15 50 25 50 25 C50 25 50 15 55 15 C70 15 80 25 80 40 C80 60 50 85 50 85 Z" 
+          fill="url(#heartGradient)" 
+          stroke="#FF1493" 
+          stroke-width="1.5"/>
     
-    <!-- Large coral formations -->
-    <path d="M50 250 C40 200 60 180 80 200 C100 180 120 200 100 250 C90 280 60 280 50 250 Z" fill="url(#coralGradient)"/>
-    <path d="M200 260 C190 210 210 190 230 210 C250 190 270 210 250 260 C240 290 210 290 200 260 Z" fill="url(#coralGradient2)"/>
-    <path d="M120 270 C110 220 130 200 150 220 C170 200 190 220 170 270 C160 300 130 300 120 270 Z" fill="url(#coralGradient)"/>
+    <!-- Heart shine/highlight -->
+    <path d="M50 85 C50 85 20 60 20 40 C20 25 30 15 45 15 C50 15 50 25 50 25 C50 25 50 15 55 15 C70 15 80 25 80 40 C80 60 50 85 50 85 Z" 
+          fill="url(#heartShine)"/>
     
-    <!-- Smaller coral branches -->
-    <path d="M30 240 C25 220 35 210 45 220 C55 210 65 220 55 240 C50 250 35 250 30 240 Z" fill="url(#coralGradient2)"/>
-    <path d="M250 250 C245 230 255 220 265 230 C275 220 285 230 275 250 C270 260 255 260 250 250 Z" fill="url(#coralGradient)"/>
-    <path d="M140 240 C135 220 145 210 155 220 C165 210 175 220 165 240 C160 250 145 250 140 240 Z" fill="url(#coralGradient2)"/>
-    
-    <!-- Fish swimming -->
-    <g transform="translate(80, 120)">
-        <ellipse cx="0" cy="0" rx="15" ry="8" fill="#FFD700"/>
-        <path d="M-15 0 L-25 -5 L-20 0 L-25 5 Z" fill="#FFD700"/>
-        <circle cx="5" cy="-2" r="2" fill="#000"/>
-        <path d="M-5 -3 Q-8 -5 -5 -7" stroke="#000" stroke-width="1" fill="none"/>
+    <!-- Small decorative hearts around the main heart -->
+    <g opacity="0.6">
+        <path d="M25 25 C25 25 20 20 20 15 C20 12 22 10 25 10 C26 10 26 12 26 12 C26 12 26 10 27 10 C30 10 32 12 32 15 C32 20 25 25 25 25 Z" 
+              fill="url(#heartGradient2)" 
+              transform="scale(0.3) translate(50, 50)"/>
+        <path d="M75 20 C75 20 70 15 70 10 C70 7 72 5 75 5 C76 5 76 7 76 7 C76 7 76 5 77 5 C80 5 82 7 82 10 C82 15 75 20 75 20 Z" 
+              fill="url(#heartGradient2)" 
+              transform="scale(0.3) translate(200, 50)"/>
+        <path d="M15 70 C15 70 10 65 10 60 C10 57 12 55 15 55 C16 55 16 57 16 57 C16 57 16 55 17 55 C20 55 22 57 22 60 C22 65 15 70 15 70 Z" 
+              fill="url(#heartGradient2)" 
+              transform="scale(0.25) translate(40, 200)"/>
+        <path d="M85 75 C85 75 80 70 80 65 C80 62 82 60 85 60 C86 60 86 62 86 62 C86 62 86 60 87 60 C90 60 92 62 92 65 C92 70 85 75 85 75 Z" 
+              fill="url(#heartGradient2)" 
+              transform="scale(0.25) translate(280, 200)"/>
     </g>
     
-    <g transform="translate(200, 100)">
-        <ellipse cx="0" cy="0" rx="12" ry="6" fill="#FF69B4"/>
-        <path d="M-12 0 L-20 -4 L-16 0 L-20 4 Z" fill="#FF69B4"/>
-        <circle cx="4" cy="-1" r="1.5" fill="#000"/>
-        <path d="M-4 -2 Q-6 -3 -4 -4" stroke="#000" stroke-width="0.8" fill="none"/>
+    <!-- Sparkle effects -->
+    <g opacity="0.8">
+        <circle cx="30" cy="30" r="1.5" fill="#FFFFFF">
+            <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="70" cy="25" r="1" fill="#FFFFFF">
+            <animate attributeName="opacity" values="0.3;0.8;0.3" dur="1.5s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="20" cy="60" r="1.2" fill="#FFFFFF">
+            <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.5s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="80" cy="65" r="1" fill="#FFFFFF">
+            <animate attributeName="opacity" values="0.2;0.8;0.2" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
     </g>
-    
-    <g transform="translate(150, 80)">
-        <ellipse cx="0" cy="0" rx="10" ry="5" fill="#00CED1"/>
-        <path d="M-10 0 L-16 -3 L-13 0 L-16 3 Z" fill="#00CED1"/>
-        <circle cx="3" cy="-1" r="1" fill="#000"/>
-        <path d="M-3 -1.5 Q-5 -2 -3 -2.5" stroke="#000" stroke-width="0.6" fill="none"/>
-    </g>
-    
-    <!-- Seaweed -->
-    <path d="M20 280 Q20 200 25 180 Q30 160 35 180 Q40 200 40 280" stroke="#228B22" stroke-width="3" fill="none"/>
-    <path d="M280 280 Q280 200 285 180 Q290 160 295 180 Q300 200 300 280" stroke="#228B22" stroke-width="3" fill="none"/>
-    <path d="M100 280 Q100 220 105 200 Q110 180 115 200 Q120 220 120 280" stroke="#32CD32" stroke-width="2" fill="none"/>
-    
-    <!-- Bubbles -->
-    <circle cx="60" cy="60" r="3" fill="#FFFFFF" opacity="0.6"/>
-    <circle cx="80" cy="40" r="2" fill="#FFFFFF" opacity="0.5"/>
-    <circle cx="40" cy="80" r="2.5" fill="#FFFFFF" opacity="0.6"/>
-    <circle cx="250" cy="70" r="2" fill="#FFFFFF" opacity="0.5"/>
-    <circle cx="270" cy="50" r="3" fill="#FFFFFF" opacity="0.6"/>
-    <circle cx="220" cy="90" r="2.5" fill="#FFFFFF" opacity="0.5"/>
-    
-    <!-- Sun rays from surface -->
-    <path d="M158 0 L160 20 M158 0 L150 15 M158 0 L166 15" stroke="#FFD700" stroke-width="2" opacity="0.8"/>
-    <path d="M158 0 L140 10 M158 0 L176 10" stroke="#FFD700" stroke-width="1.5" opacity="0.6"/>
 </svg>
