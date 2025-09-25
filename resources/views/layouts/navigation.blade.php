@@ -18,6 +18,9 @@
                     <x-nav-link :href="route('about')" :active="request()->routeIs('about')">
                         {{ __('About') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('forum.index')" :active="request()->routeIs('forum.*')">
+                        {{ __('Forum') }}
+                    </x-nav-link>
                     <x-nav-link :href="route('attractions.index')" :active="request()->routeIs('attractions.*')">
                         {{ __('Attractions') }}
                     </x-nav-link>
@@ -101,6 +104,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('about')" :active="request()->routeIs('about')">
                 {{ __('About') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('forum.index')" :active="request()->routeIs('forum.*')">
+                {{ __('Forum') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('attractions.index')" :active="request()->routeIs('attractions.*')">
                 {{ __('Attractions') }}

@@ -144,4 +144,7 @@
     @apply text-rose-900/90;
     font-family: 'Crimson Text', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   }
+  .prose-rose {
+    --tw-prose-body: #7f1d1d;
+  }
 }

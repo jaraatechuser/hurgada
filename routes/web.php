@@ -8,6 +8,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ForumController;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/about', [PageController::class, 'about'])->name('about');
@@ -16,6 +17,19 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact.index
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::get('/privacy-policy', [PageController::class, 'privacyPolicy'])->name('privacy.policy');
 Route::get('/terms-of-use', [PageController::class, 'termsOfUse'])->name('terms.use');
+
+// Forum
+Route::get('/forum', [ForumController::class, 'index'])->name('forum.index');
+Route::get('/forum/create', [ForumController::class, 'createThread'])->name('forum.create');
+Route::post('/forum', [ForumController::class, 'storeThread'])->name('forum.store');
+Route::get('/forum/{slug}', [ForumController::class, 'show'])->name('forum.show');
+Route::post('/forum/{slug}', [ForumController::class, 'storePost'])->name('forum.post');
+Route::middleware('auth')->group(function () {
+    Route::get('/forum/{slug}/edit', [ForumController::class, 'editThread'])->name('forum.edit');
+    Route::patch('/forum/{slug}', [ForumController::class, 'updateThread'])->name('forum.update');
+    Route::delete('/forum/{slug}', [ForumController::class, 'destroyThread'])->name('forum.destroy');
+    Route::delete('/forum/{slug}/posts/{postId}', [ForumController::class, 'destroyPost'])->name('forum.post.destroy');
+});
 
 Route::resource('attractions', AttractionController::class)->only(['index','show']);
 Route::resource('events', EventController::class)->only(['index','show']);
