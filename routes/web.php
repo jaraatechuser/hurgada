@@ -7,6 +7,7 @@ use App\Http\Controllers\AttractionController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ForumController;
 
@@ -35,9 +36,9 @@ Route::resource('attractions', AttractionController::class)->only(['index','show
 Route::resource('events', EventController::class)->only(['index','show']);
 Route::resource('blog', BlogController::class)->only(['index','show']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
