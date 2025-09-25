@@ -72,8 +72,8 @@ class DashboardController extends Controller
                 ];
             });
 
-        $recentComments = $modelComments
-            ->merge($forumReplies)
+        $recentComments = $modelComments->toBase()
+            ->merge($forumReplies->toBase())
             ->sortByDesc('created_at')
             ->take(6)
             ->values();
