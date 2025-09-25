@@ -6,5 +6,9 @@
     {!! nl2br(e($blog->content)) !!}
   </div>
   <br/>
+  <div class="space-y-4">
+    <livewire:favorites-toggle :model-type="\App\Models\Blog::class" :model-id="$blog->id" />
+    <livewire:comments :model-type="\App\Models\Blog::class" :model-id="$blog->id" />
+  </div>
 </div>
 </x-app-layout>

@@ -25,8 +25,10 @@
                             <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
                                 @foreach($favorites as $fav)
                                     @php($model = $fav->favoritable)
-                                    <a href="{{ isset($model->slug) ? url((class_basename($model)::lower()) . '/' . $model->slug) : '#' }}" class="block rounded-xl border border-rose-100 dark:border-rose-900/50 p-4 hover:shadow-md transition">
-                                        <div class="text-xs uppercase tracking-wide text-rose-400">{{ class_basename($model) }}</div>
+                                    @php($type = class_basename($model))
+                                    @php($url = $type === 'Attraction' ? route('attractions.show', $model) : ($type === 'Event' ? route('events.show', $model) : ($type === 'Blog' ? route('blog.show', $model) : '#')))
+                                    <a href="{{ $url }}" class="block rounded-xl border border-rose-100 dark:border-rose-900/50 p-4 hover:shadow-md transition">
+                                        <div class="text-xs uppercase tracking-wide text-rose-400">{{ $type }}</div>
                                         <div class="mt-1 font-medium text-gray-800 dark:text-gray-100 line-clamp-2">
                                             {{ $model->title ?? $model->name ?? __('Favorite') }}
                                         </div>
@@ -42,10 +44,13 @@
                             <p class="text-sm text-rose-400">{{ __('You have not commented yet.') }}</p>
                         @else
                             <ul class="space-y-3">
-                                @foreach($recentComments as $comment)
+                                @foreach($recentComments as $item)
                                     <li class="p-4 rounded-xl border border-rose-100 dark:border-rose-900/50">
-                                        <div class="text-xs text-rose-400">{{ $comment->created_at->diffForHumans() }}</div>
-                                        <div class="mt-1 text-gray-800 dark:text-gray-100">{{ $comment->content }}</div>
+                                        <div class="flex items-center justify-between">
+                                            <div class="text-xs text-rose-400">{{ \Illuminate\Support\Carbon::parse($item['created_at'])->diffForHumans() }}</div>
+                                            <a href="{{ $item['url'] }}" class="text-xs text-rose-600 hover:underline">{{ $item['label'] }}</a>
+                                        </div>
+                                        <div class="mt-1 text-gray-800 dark:text-gray-100">{{ $item['content'] }}</div>
                                     </li>
                                 @endforeach
                             </ul>
