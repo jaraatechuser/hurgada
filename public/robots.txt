@@ -1,2 +1,31 @@
 User-agent: *
-Disallow:
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /storage/
+Disallow: /vendor/
+Disallow: /node_modules/
+Disallow: /database/
+Disallow: /config/
+Disallow: /bootstrap/
+Disallow: /app/
+Disallow: /resources/
+Disallow: /routes/
+Disallow: /tests/
+
+# Allow important pages
+Allow: /attractions/
+Allow: /events/
+Allow: /blog/
+Allow: /gallery/
+Allow: /forum/
+Allow: /about
+Allow: /contact
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

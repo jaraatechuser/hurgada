@@ -10,6 +10,7 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ForumController;
+use App\Http\Controllers\SitemapController;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/about', [PageController::class, 'about'])->name('about');
@@ -18,6 +19,9 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact.index
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::get('/privacy-policy', [PageController::class, 'privacyPolicy'])->name('privacy.policy');
 Route::get('/terms-of-use', [PageController::class, 'termsOfUse'])->name('terms.use');
+
+// SEO Routes
+Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
 
 // Forum
 Route::get('/forum', [ForumController::class, 'index'])->name('forum.index');
