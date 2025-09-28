@@ -22,5 +22,6 @@ class DatabaseSeeder extends Seeder
 		Event::factory()->count(12)->create();
 
 		$this->call(BlogSeeder::class);
+		$this->call(HotelSeeder::class);
 	}
 }

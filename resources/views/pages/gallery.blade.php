@@ -3,7 +3,7 @@
   <div class="flex items-end justify-between gap-4">
     <div>
       <h1 class="text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 dark:text-white">Photo Gallery</h1>
-      <p class="mt-2 text-gray-600 dark:text-gray-300">Pinterest-style Masonry grid with a smooth lightbox.</p>
+      {{--<p class="mt-2 text-gray-600 dark:text-gray-300">Pinterest-style Masonry grid with a smooth lightbox.</p>--}}
     </div>
     <div class="hidden sm:flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
       <span class="inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>

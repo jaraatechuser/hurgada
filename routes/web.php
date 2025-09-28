@@ -10,6 +10,7 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ForumController;
+use App\Http\Controllers\HotelsController;
 use App\Http\Controllers\SitemapController;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
@@ -39,6 +40,7 @@ Route::middleware('auth')->group(function () {
 Route::resource('attractions', AttractionController::class)->only(['index','show']);
 Route::resource('events', EventController::class)->only(['index','show']);
 Route::resource('blog', BlogController::class)->only(['index','show']);
+Route::resource('hotels', HotelsController::class)->only(['index','show']);
 
 Route::get('/dashboard', [DashboardController::class, 'index'])
     ->middleware(['auth', 'verified'])

@@ -44,3 +44,4 @@
 @if(isset($structured_data))
     @section('structured_data', $structured_data)
 @endif
+
