@@ -36,6 +36,9 @@
                     <x-nav-link :href="route('hotels.index')" :active="request()->routeIs('hotels.*')">
                         {{ __('Hotels') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('restaurants.index')" :active="request()->routeIs('restaurants.*')">
+                        {{ __('Restaurants') }}
+                    </x-nav-link>
                     <x-nav-link :href="route('contact.index')" :active="request()->routeIs('contact.index')">
                         {{ __('Contact') }}
                     </x-nav-link>
@@ -125,6 +128,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('hotels.index')" :active="request()->routeIs('hotels.*')">
                 {{ __('Hotels') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('restaurants.index')" :active="request()->routeIs('restaurants.*')">
+                {{ __('Restaurants') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('contact.index')" :active="request()->routeIs('contact.index')">
                 {{ __('Contact') }}
